@@ -107,8 +107,9 @@ def test_change_to_the_opposite():
 def test_comparison_of_angles():
     a = [2, 2, 5]
     b = [5, 4, 7]
-    res = vec.search_for_the_cosine(a, b)
-    exp = 0.9725179925282852
+    cos = vec.search_for_the_cosine(a, b)
+    res = vec.comparison_of_angles(cos)
+    exp = "Угол между векторами острый"
     assert res == exp
 
 def test_vector_projection():
