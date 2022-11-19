@@ -126,5 +126,5 @@ def search_for_the_cosine(a, b):
     return res
 
 
-def comparison_of_angles(cosinus):
+def angles(cosinus):
     return math.degrees(math.acos(cosinus))
