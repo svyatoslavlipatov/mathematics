@@ -1,5 +1,5 @@
 from vector.vector_output import show_title, show_res
-from vector.vector_calculations import summa, sub, multiply_scalar, division_scalar, multiplication_vectors, chk_collinear, collin, chk_codirectional, chk_contradirectional, chk_equality, chk_equality_with_precision, chk_orthogonality, vector_length, vector_rationing, change_to_the_opposite, vector_projection, search_for_the_cosine, comparison_of_angles
+from vector.vector_calculations import summa, sub, multiply_scalar, division_scalar, multiplication_vectors, chk_collinear, collin, chk_codirectional, chk_contradirectional, chk_equality, chk_equality_with_precision, chk_orthogonality, vector_length, vector_rationing, change_to_the_opposite, vector_projection, search_for_the_cosine, angles
 from vector.vector_converter import int_massive
 
 def input_two_arrays():
@@ -142,7 +142,7 @@ def angle():
     show_title('14.Угол между векторами')
     a, b = input_two_arrays()
     cos = search_for_the_cosine(a, b)
-    res = comparison_of_angles(cos)
+    res = angles(cos)
     show_res(res, 'Ответ')
 
 def projection():

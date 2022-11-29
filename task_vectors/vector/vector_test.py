@@ -97,11 +97,11 @@ def test_change_to_the_opposite():
     exp = [-5, -4, -7]
     assert res == exp
 
-def test_comparison_of_angles():
+def test_angles():
     a = [2, 2, 5]
     b = [5, 4, 7]
     cos = vec.search_for_the_cosine(a, b)
-    res = vec.comparison_of_angles(cos)
+    res = vec.angles(cos)
     exp = 13.463609704775655
     assert res == exp
 
