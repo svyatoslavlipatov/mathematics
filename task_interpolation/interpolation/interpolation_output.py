@@ -1,4 +1,3 @@
-
 def show_title(title):
     #Вывод задания на экран. Вывод
     print(title)
