@@ -7,7 +7,6 @@ def get_value_of_x():
     #Ввод значения x. Условно контроллер
     return int(input("Введите значение X: "))
 
-
 def matrix_append(matrix_rows, matrix):
     #Ввод строк матрицы. Условно контроллер
     for i in range(matrix_rows): 
@@ -20,15 +19,11 @@ def input_one_matrix():
     matrix_append(matrix_rows, matrix)
     return matrix
 
-
-
 def input_one_massive():
     #Ввод одного массива. Условно контроллер
     m1 = input("Введите значения x через пробел: ")
     a = int_massive(m1)
     return a
-
-
 
 def linear_interpolation():
     #1.___________Линейная интерполяция______________. Контроллер
@@ -40,7 +35,6 @@ def linear_interpolation():
     show_res(yp, "Значение y")
     draw_linear_interpolation(x, y, xp, yp)
 
-
 def piecewise_linear_interpolation():
     #2.___________Кусочно-линейная интерполяция______________. Контроллер
     show_title("2.Кусочно-линейная интерполяция")
@@ -51,7 +45,6 @@ def piecewise_linear_interpolation():
     show_res(yp, "Значения y")
     draw_piecewise_linear_interpolation(x, y, xp, yp)
 
-
 def lagrange_polynomial():
     #3.___________Полином Лагранжа______________. Контроллер
     show_title("3.Полином Лагранжа")
@@ -61,9 +54,6 @@ def lagrange_polynomial():
     yp = calculation_lagrange_polynomial(x, y, xp)
     show_res(yp, "Значение y")
     draw_lagrange_polynomial(x, y, xp, yp)
-
-
-
 
 def get_actions():
     # Получение доступных действий
