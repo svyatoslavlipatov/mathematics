@@ -4,7 +4,6 @@ def get_coord1_and_coord2(coord):
     coord2 = coord[1]
     return coord1, coord2
 
-
 def get_x_and_y(matrix):
     # Получение значений из матрицы. Вычисление
     x = []
@@ -46,4 +45,3 @@ def calculation_lagrange_polynomial(x, y, xp):
                 p *= (xp - x[j]) / (x[i] - x[j])
         yp += y[i] * p
     return yp
-
