@@ -29,8 +29,6 @@ def calculations_maclaurin_series_arcsin(x, n):
     return res
 
 def calculations_maclaurin_series_arccos(x, n):
-    #Разложение арккосинуса. Вычисление 
-    res = 0
-    for h in range(0, n + 1):
-        res = (math.pi / 2) - (calculations_maclaurin_series_arcsin(x,n))
+    #Разложение арккосинуса. Вычисление
+    res = (math.pi / 2) - (calculations_maclaurin_series_arcsin(x,n))
     return res
